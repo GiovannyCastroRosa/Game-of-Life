@@ -466,7 +466,7 @@ namespace Game_of_Life
                 // Create a couple variables to calculate the width and height
                 // of the data in the file.
                 int maxWidth = 0;
-                int maxHeight = 0;
+                int maxHeight = 0; 
 
                 // Iterate through the file once to get its size.
                 while (!reader.EndOfStream)
