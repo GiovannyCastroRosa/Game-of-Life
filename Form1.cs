@@ -60,7 +60,6 @@ namespace Game_of_Life
             cellColor = Properties.Settings.Default.CellColor;
             gridColor = Properties.Settings.Default.GridColor;
             seed = Properties.Settings.Default.Seed;
-
             uniWidth = Properties.Settings.Default.universeWidth;
             uniHeight = Properties.Settings.Default.universeHeight;
             universe = new bool[uniWidth, uniHeight];
@@ -260,9 +259,7 @@ namespace Game_of_Life
                     // Display Neighbors count 
                     if (isNeighborCount) e.Graphics.DrawString(neighbor.ToString(), font, Brushes.Black, cellRect, stringFormat);
 
-
                 }
-
             }
             // Update status strip for Interval, Seed, and Lving Cells
             toolStripStatusLabelInterval.Text = "Interval : " + timer.Interval.ToString();
@@ -395,7 +392,6 @@ namespace Game_of_Life
                 }
             }
             graphicsPanel1.Invalidate();
-
         }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)

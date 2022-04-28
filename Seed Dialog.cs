@@ -24,7 +24,7 @@ namespace Game_of_Life
 
         public void SetNumber(int number)
         {
-            numericUpDown1.Value = number;
+            numericUpDown1.Value = number; 
         }
 
         private void buttonRandomize_Click(object sender, EventArgs e)
