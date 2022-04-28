@@ -13,7 +13,6 @@ namespace Game_of_Life
     public partial class Form1 : Form
     {
 
-
         // The universe array
         bool[,] universe = new bool[5, 5];
         bool[,] scratchPad = new bool[5, 5];
@@ -435,7 +434,6 @@ namespace Game_of_Life
                         }
                         // Else if the universe[x,y] is dead then append '.' (period)
                         // to the row string.
-
                     }
 
                     // Once the current row has been read through and the 
@@ -507,7 +505,6 @@ namespace Game_of_Life
 
                     // it is a row of cells and needs to be iterated through.
 
-
                     for (int xPos = 0; xPos < row.Length; xPos++)
                     {
                         // If row[xPos] is a 'O' (capital O) then
@@ -518,13 +515,11 @@ namespace Game_of_Life
                         // set the corresponding cell in the universe to dead.
                     }
                     yPos += 1;
-
                 }
                 graphicsPanel1.Invalidate();
                 // Close the file.
                 reader.Close();
             }
-
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -593,7 +588,6 @@ namespace Game_of_Life
                 RandomizeSeed();
                 graphicsPanel1.Invalidate();
             }
-
 
         }
 
